@@ -41,6 +41,10 @@ public class Choisir {
 		return c;
 	}
 	
+	/** author KOMINIARZ Anaïs 18/03/2020
+	 * @param listf
+	 * @return
+	 */
 	public static IFournisseur ChoisirIFournisseur(List<IFournisseur> listf) {
 		System.out.println("choix du fournisseur :");
 		String choix = null;
