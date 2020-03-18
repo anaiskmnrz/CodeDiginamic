@@ -29,7 +29,8 @@ public class Affichages {
 		System.out.println("Taper 3 pour afficher les clients");
 		System.out.println("Taper 4 pour afficher les fournisseur");
 		System.out.println("Taper 5 pour afficher le patron");
-		System.out.println("Taper 6 pour retourner au menu");
+		System.out.println("Taper 6 pour afficher les interimaires");
+		System.out.println("Taper 7 pour retourner au menu");
 		
 		choix=Menus.sc.nextInt();
 		
@@ -44,7 +45,9 @@ public class Affichages {
 		break;
 		case 5 : AfficherCommun(listpatron);
 		break;
-		case 6 : Menus.Menu();
+		case 6 : AfficherCommun(Saisir.listinterimaire);
+		break;
+		case 7 : Menus.Menu();
 		break;
 		default : Afficher();
 		break;
@@ -63,6 +66,7 @@ public class Affichages {
 		list.addAll(Saisir.listsalarie);
 		list.addAll(Saisir.listclient);
 		list.addAll(Saisir.listfournisseur);
+		list.addAll(Saisir.listinterimaire);
 		list.add(Saisir.patron);
 		
 		return list;
