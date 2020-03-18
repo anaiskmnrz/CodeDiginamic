@@ -2,9 +2,7 @@ package projPOO01.Exceptions;
 
 public class ExceptionDate extends Exception {
 
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 
 	public ExceptionDate() {

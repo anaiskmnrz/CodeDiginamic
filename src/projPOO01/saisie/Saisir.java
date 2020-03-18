@@ -24,7 +24,7 @@ public class Saisir {
 	public static Patron patron = new Patron();
 	public static ArrayList<Personne> listclient = new ArrayList<Personne>();
 	public static ArrayList<Personne> listsalarie = new ArrayList<Personne>();
-	public static ArrayList<Personne> listinterimaires = new ArrayList<Personne>();
+	public static ArrayList<Personne> listinterimaire = new ArrayList<Personne>();
 	public static ArrayList<Personne> listfournisseur = new ArrayList<Personne>();
 	
 	public static void SaisirAll(){
@@ -262,7 +262,7 @@ public static void SaisirInterimaire(){
 			sl.add(s);
 		}
 		
-		listinterimaires = new ArrayList<Personne>(sl);
+		listinterimaire = new ArrayList<Personne>(sl);
 		if(Menus.choixmenu!=1) {
 			Menus.Menu();
 		}
